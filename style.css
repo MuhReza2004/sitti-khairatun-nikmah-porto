@@ -1441,6 +1441,14 @@ body {
   }
 }
 
+/* project img */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
 /* ===== SCROLL TO TOP BUTTON ===== */
 .scroll-top {
   position: fixed;
