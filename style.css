@@ -1412,6 +1412,7 @@ body {
   .profile-pic {
     width: 150px;
     height: 150px;
+    zoom: 80%;
   }
 
   .btn {
