@@ -3,43 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikmah - Portfolio</title>
-    <!-- Favicon -->
+    <title>Sitti Khairatun Nikmah - Civil Engineer</title>
     <link rel="icon" type="image/png" href="assets/Background.png" />
 
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-animation"></div>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="floating-shape shape-4"></div>
+      <div class="floating-shape shape-5"></div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="logo">
           <div class="logo-icon">
-            <img src="assets/Background.png" alt="Logo NB" />
+            <i class="fas fa-hard-hat"></i>
           </div>
+          <span class="logo-text">Nikmah</span>
         </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- <li>
-            <button class="language-btn">
-              <i class="fas fa-globe"></i> EN
-            </button>
-          </li> -->
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
 
@@ -47,50 +60,586 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Hi, I'm Sitti Khairatun Nikmah</h1>
-          <p class="subtitle">Civil Engineer</p>
-          <p>
-            I'm a Civil Engineer with a passion for problem-solving and a strong
-            commitment to delivering high-quality solutions. With a background
-            in civil engineering, I bring a unique perspective to my work,
-            combining technical expertise with a creative approach to design and
-            project management. I thrive in collaborative environments,
-            collaborating with cross-functional teams to bring innovative
-            solutions to life.
+          <div class="hero-badge">
+            <i class="fas fa-building"></i>
+            <span>Civil Engineering Student</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Sitti Khairatun Nikmah</span>
+          </h1>
+          <p class="hero-subtitle">Building Tomorrow's Infrastructure Today</p>
+          <p class="hero-description">
+            Passionate Civil Engineering student at Universitas Muhammadiyyah
+            Kendari, dedicated to creating sustainable infrastructure solutions
+            that enhance community life. Ready to shape the future through
+            innovative engineering design.
           </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">2022</span>
+              <span class="stat-label">Started Journey</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Skills Mastered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedication</span>
+            </div>
+          </div>
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">
-              <i class="fas fa-code"></i>
-              View My Work
+              <i class="fas fa-rocket"></i>
+              Explore My Work
             </a>
             <a href="#contact" class="btn btn-secondary">
-              <i class="fas fa-envelope"></i>
-              Get In Touch
+              <i class="fas fa-paper-plane"></i>
+              Let's Connect
             </a>
           </div>
         </div>
         <div class="hero-image">
-          <div class="profile-card">
-            <div class="profile-pic">
-              <div
-                style="
-                  width: 100%;
-                  height: 100%;
-
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  color: white;
-                  font-size: 3rem;
-                  font-weight: bold;
-                "
-              >
-                <img src="assets/profile.JPG" alt="" />
+          <div class="profile-container">
+            <div class="profile-card">
+              <div class="profile-pic">
+                <img src="assets/profile.JPG" alt="Sitti Khairatun Nikmah" />
+                <div class="profile-overlay">
+                  <div class="profile-status">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                  </div>
+                </div>
+              </div>
+              <div class="profile-info">
+                <h3>Sitti Khairatun Nikmah</h3>
+                <p>Civil Engineer Student</p>
+                <div class="profile-location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Kendari, Indonesia</span>
+                </div>
+              </div>
+              <div class="social-links">
+                <a
+                  href="mailto:khairatunnikmah02@gmail.com"
+                  class="social-link"
+                  title="Email"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  href="http://www.linkedin.com/in/sittikhairatunnikmah"
+                  class="social-link"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="tel:+6285141705154" class="social-link" title="Phone">
+                  <i class="fas fa-phone"></i>
+                </a>
               </div>
             </div>
-            <h3>Sitti Khairatun Nikmah</h3>
-            <p>Civil Enggineer</p>
-            <div class="social-links">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-intro">
+              <h3>Building Dreams, One Structure at a Time</h3>
+              <p>
+                As a dedicated Civil Engineering student, I'm passionate about
+                creating sustainable infrastructure that makes a difference. My
+                journey in civil engineering combines technical excellence with
+                innovative thinking to solve real-world challenges.
+              </p>
+            </div>
+
+            <div class="about-goals">
+              <h4><i class="fas fa-bullseye"></i> My Vision</h4>
+              <p>
+                To leverage cutting-edge engineering solutions in creating
+                sustainable, resilient infrastructure that enhances community
+                life and promotes environmental responsibility for future
+                generations.
+              </p>
+            </div>
+
+            <div class="education-timeline">
+              <h4><i class="fas fa-graduation-cap"></i> Education Journey</h4>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h5>Bachelor of Civil Engineering</h5>
+                  <p class="timeline-place">
+                    Universitas Muhammadiyyah Kendari
+                  </p>
+                  <p class="timeline-date">2022 - Present</p>
+                  <p class="timeline-description">
+                    Focusing on sustainable infrastructure, structural design,
+                    and innovative construction methodologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-info">
+            <div class="info-card">
+              <div class="info-header">
+                <i class="fas fa-user-circle"></i>
+                <h4>Personal Info</h4>
+              </div>
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label">Name:</span>
+                  <span class="info-value">Sitti Khairatun Nikmah</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email:</span>
+                  <span class="info-value">khairatunnikmah02@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Phone:</span>
+                  <span class="info-value">+62 851-4170-5154</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location:</span>
+                  <span class="info-value">Kendari, Indonesia</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-header">
+                <i class="fas fa-language"></i>
+                <h4>Languages</h4>
+              </div>
+              <div class="language-list">
+                <div class="language-item">
+                  <span class="language-name">Indonesian</span>
+                  <div class="language-level">
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 100%"></div>
+                    </div>
+                    <span class="level-text">Native</span>
+                  </div>
+                </div>
+                <div class="language-item">
+                  <span class="language-name">English</span>
+                  <div class="language-level">
+                    <div class="level-bar">
+                      <div class="level-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="level-text">Pre-intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-content">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fas fa-tools"></i>
+                <h3>Technical Skills</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>AutoCAD</h4>
+                    <p>2D/3D Design & Technical Drawing</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>ArcGIS</h4>
+                    <p>Geographic Information Systems</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fab fa-microsoft"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Microsoft Office</h4>
+                    <p>Data Analysis & Documentation</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-palette"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Canva</h4>
+                    <p>Visual Design & Presentations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <div class="category-header">
+                <i class="fas fa-users"></i>
+                <h3>Soft Skills</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-handshake"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Teamwork</h4>
+                    <p>Collaborative Project Management</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Communication</h4>
+                    <p>Clear Technical Documentation</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Critical Thinking</h4>
+                    <p>Problem Solving & Analysis</p>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="skill-info">
+                    <h4>Time Management</h4>
+                    <p>Efficient Project Delivery</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Academic Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">AutoCAD</span>
+                  <span class="tech-tag">Structural Design</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Structural Design Project</h3>
+              <p>
+                Comprehensive structural analysis and design of a multi-story
+                building using modern engineering principles and sustainable
+                materials.
+              </p>
+              <div class="project-features">
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Load Analysis</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Foundation Design</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Safety Assessment</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-road"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">ArcGIS</span>
+                  <span class="tech-tag">Traffic Analysis</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Highway Design & Planning</h3>
+              <p>
+                Detailed highway design project including traffic flow analysis,
+                geometric design, and environmental impact assessment.
+              </p>
+              <div class="project-features">
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Route Planning</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Traffic Study</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Environmental Impact</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-tint"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Hydraulic Design</span>
+                  <span class="tech-tag">Water Management</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Water Supply System</h3>
+              <p>
+                Design and analysis of municipal water supply system including
+                distribution networks, pumping stations, and treatment
+                facilities.
+              </p>
+              <div class="project-features">
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Network Design</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Pump Selection</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Quality Control</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Green Engineering</span>
+                  <span class="tech-tag">Sustainability</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sustainable Construction</h3>
+              <p>
+                Research project on sustainable construction materials and
+                methods for reducing environmental impact in civil engineering
+                projects.
+              </p>
+              <div class="project-features">
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Material Research</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Cost Analysis</span
+                >
+                <span class="feature"
+                  ><i class="fas fa-check"></i> Impact Assessment</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements & Goals</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Academic Excellence</h3>
+            <p>
+              Maintaining strong academic performance in Civil Engineering
+              coursework
+            </p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Technical Skills</h3>
+            <p>
+              Proficient in industry-standard software and engineering tools
+            </p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovation Focus</h3>
+            <p>Committed to sustainable and innovative engineering solutions</p>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Community Impact</h3>
+            <p>Dedicated to projects that improve community infrastructure</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Build Something Together</h2>
+        <div class="contact-content">
+          <div class="contact-text">
+            <h3>Ready to Connect?</h3>
+            <p>
+              I'm always excited to discuss civil engineering projects,
+              sustainable infrastructure solutions, or potential collaboration
+              opportunities. Whether you're looking for a dedicated team member
+              or want to explore innovative engineering ideas, let's start a
+              conversation!
+            </p>
+
+            <div class="contact-interests">
+              <h4><i class="fas fa-heart"></i> My Interests</h4>
+              <div class="interests-list">
+                <span class="interest-tag">Sustainable Infrastructure</span>
+                <span class="interest-tag">Structural Engineering</span>
+                <span class="interest-tag">Urban Planning</span>
+                <span class="interest-tag">Green Construction</span>
+                <span class="interest-tag">Water Resources</span>
+                <span class="interest-tag">Transportation Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Email</h4>
+                  <p>khairatunnikmah02@gmail.com</p>
+                  <a
+                    href="mailto:khairatunnikmah02@gmail.com"
+                    class="contact-link"
+                  >
+                    Send Message <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Phone</h4>
+                  <p>+62 851-4170-5154</p>
+                  <a href="tel:+6285141705154" class="contact-link">
+                    Call Now <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="method-info">
+                  <h4>LinkedIn</h4>
+                  <p>Professional Network</p>
+                  <a
+                    href="http://www.linkedin.com/in/sittikhairatunnikmah"
+                    class="contact-link"
+                  >
+                    Connect <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-info">
+                  <h4>Location</h4>
+                  <p>Kendari, Indonesia</p>
+                  <span class="contact-link"> Available for Remote Work </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <i class="fas fa-hard-hat"></i>
+              <span>Sitti Khairatun Nikmah</span>
+            </div>
+            <p>
+              Building tomorrow's infrastructure with passion and precision.
+            </p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
               <a href="mailto:khairatunnikmah02@gmail.com" class="social-link">
                 <i class="fas fa-envelope"></i>
               </a>
@@ -100,442 +649,100 @@
               >
                 <i class="fab fa-linkedin"></i>
               </a>
-              <!-- <a href="https://instagram.com/reezaaa_12" class="social-link">
-                <i class="fab fa-instagram"></i>
-              </a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="contact-content">
-        <div>
-          <h3
-            style="
-              font-size: 1.5rem;
-              margin-bottom: 1rem;
-              color: var(--primary-color);
-            "
-          >
-            My Goal
-          </h3>
-          <p
-            style="
-              font-size: 1.1rem;
-              line-height: 1.8;
-              color: var(--text-secondary);
-            "
-          >
-            My goal is to leverage my skills in civil engineering to create
-            sustainable and innovative solutions that improve infrastructure and
-            enhance the quality of life for communities. I am dedicated to
-            continuous learning and professional growth, aiming to contribute to
-            projects that make a positive impact on society.
-          </p>
-          <div style="margin-top: 2rem">
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
-              Education
-            </h4>
-            <p>
-              <strong>2022 - Present</strong><br />
-              Universitas Muhammadiyyah Kendari - Civil Engineering
-            </p>
-          </div>
-        </div>
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <h4>Email</h4>
-              <p>khairatunnikmah02@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div>
-              <h4>Phone</h4>
-              <p>+62 851-4170-5154</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h4>Location</h4>
-              <p>Kendari, Indonesia</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-      <h2 class="section-title">Skills & Expertise</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-code"></i> Programming Skills</h3>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-js"></i></div>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-php"></i></div>
-            <span>PHP</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-react"></i></div>
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-            <span>Next.js</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
-            <span>Laravel</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="fas fa-palette"></i> Design Skills</h3>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
-            <span>Adobe Photoshop</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-vector-square"></i></div>
-            <span>Adobe Illustrator</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-video"></i></div>
-            <span>Adobe Premiere Pro</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-desktop"></i></div>
-            <span>Web Design</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-            <span>App Design</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3><i class="fas fa-users"></i> Soft Skills</h3>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-handshake"></i></div>
-            <span>Teamwork</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-comments"></i></div>
-            <span>Communication</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-brain"></i></div>
-            <span>Critical Thinking</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-clock"></i></div>
-            <span>Time Management</span>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon"><i class="fas fa-search"></i></div>
-            <span>User Research</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <h2 class="section-title">My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/bmi.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Body Check</h3>
-            <p class="project-description">
-              A simple BMI calculator built with HTML, CSS, and JavaScript that
-              determines Body Mass Index and provides activity recommendations
-              based on results.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://body-check-six.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
+              <a href="tel:+6285141705154" class="social-link">
+                <i class="fas fa-phone"></i>
               </a>
             </div>
           </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/website1.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Anime List</h3>
-            <p class="project-description">
-              A Next.js application that implements a public API to display
-              available anime. Built following modern React practices and
-              responsive design.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://reza-anime-list.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Sitti Khairatun Nikmah. All rights reserved.</p>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/mentorme.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">MentorMe</h3>
-            <p class="project-description">
-              MentorMe is a learning platform that connects students with
-              mentors through 1:1 sessions and real-world projects to build
-              digital skills and industry-ready portfolios.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://www.mentorme.id/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/sikecil.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Si Kecil Cerdas</h3>
-            <p class="project-description">
-              A website providing child stimulation recommendations appropriate
-              for children aged 0-24 months. Helps parents with early childhood
-              development.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://si-kecil-cerdas.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/diet.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Health Diet</h3>
-            <p class="project-description">
-              A website providing personalized diet recommendations based on
-              user's medical history, aimed at health-conscious individuals
-              seeking guidance.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://healtdiet.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="assets/mentora.png" alt="" />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Mentora</h3>
-            <p class="project-description">
-              n AI-powered chatbot that recommends questions and helps users
-              explore topics interactively. Built with NextJS and Gemini API to
-              enhance learning through conversations.
-            </p>
-            <div class="project-links">
-              <a
-                href="https://mentora-one.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-tools"></i> Coming Soon
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="contact-content">
-        <div>
-          <h3
-            style="
-              font-size: 1.5rem;
-              margin-bottom: 1rem;
-              color: var(--primary-color);
-            "
-          >
-            Let's Work Together
-          </h3>
-          <p
-            style="
-              font-size: 1.1rem;
-              line-height: 1.8;
-              color: var(--text-secondary);
-              margin-bottom: 2rem;
-            "
-          >
-            I'm always open to discussing new opportunities, interesting
-            projects, and creative collaborations. Feel free to reach out if
-            you'd like to work together!
-          </p>
-          <div style="margin-bottom: 2rem">
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
-              Languages
-            </h4>
-            <p>
-              <strong>Indonesian</strong> - Native<br />
-              <strong>English</strong> - Pre-intermediate
-            </p>
-          </div>
-          <div>
-            <h4 style="color: var(--primary-color); margin-bottom: 1rem">
-              Interests
-            </h4>
-            <p>Design Trends • Technology • Web Development</p>
-          </div>
-        </div>
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div>
-              <h4>Email</h4>
-              <p>muh.reza2441@gmail.com</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div>
-              <h4>Phone</h4>
-              <p>+62 823-2449-7038</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div>
-              <h4>Location</h4>
-              <p>Makassar, Indonesia</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div>
-              <h4>LinkedIn</h4>
-              <p>linkedin.com/in/muh-reza</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer
-      style="
-        background: var(--bg-secondary);
-        padding: 3rem 2rem 2rem;
-        text-align: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      "
-    >
-      <div style="max-width: 1200px; margin: 0 auto">
-        <div
-          style="
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-          "
-        >
-          <a href="mailto:muh.reza2441@gmail.com" class="social-link">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a
-            href="https://linkedin.com/in/muh-reza"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="https://instagram.com/reezaaa_12"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://github.com/MuhReza2004"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <p style="color: var(--text-secondary)">
-          &copy; 2024 Muh Reza. All rights reserved.
-        </p>
       </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
+    <!-- Scroll to Top -->
     <button class="scroll-top" id="scrollTop">
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
+
+          // Close mobile menu after click
+          navLinks.classList.remove("active");
+          menuToggle.classList.remove("active");
+        });
+      });
+
+      // Scroll to top button
+      const scrollTopBtn = document.getElementById("scrollTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollTopBtn.classList.add("visible");
+        } else {
+          scrollTopBtn.classList.remove("visible");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Navbar background on scroll
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll(".section").forEach((section) => {
+        observer.observe(section);
+      });
+
+      // Observe cards and items
+      document
+        .querySelectorAll(".project-card, .skill-item, .achievement-card")
+        .forEach((card) => {
+          observer.observe(card);
+        });
+    </script>
   </body>
 </html>
